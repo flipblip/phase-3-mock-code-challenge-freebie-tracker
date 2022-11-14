@@ -18,4 +18,15 @@ puts "Creating freebies..."
 # ***************************************************************
 # Create freebies Here
 
+# create_table :freebies do |t|
+#     t.string :item_name
+#     t.integer :value
+#     t.integer :company_id
+#     t.integer :dev_id
+
+f1 = Freebie.create(item_name: "Mug", value: 20, company_id: 1, dev_id: 1)
+f3 = Freebie.create(item_name: "T-shirt", value: 10, company_id: 1, dev_id: 1)
+f3 = Freebie.create(item_name: "dongle", value: 5, company_id: 1, dev_id: 1)
+
+
 puts "Seeding done!"
